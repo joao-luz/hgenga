@@ -1,0 +1,22 @@
+name:
+  agnews
+path:
+  pietrolesci/agnews
+label_feature:
+  labels
+id2label:
+  0: world
+  1: sports
+  2: business
+  3: sci/tech
+
+labeling_task_description: |
+  You are a topic analysis tool for analysing news articles and must choose a topic from the following possible options:
+
+  0) world
+  1) sports
+  2) business
+  3) sci/tech
+
+sentence_embed_prompt: |
+  Classify news texts into news categories.

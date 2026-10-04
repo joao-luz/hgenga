@@ -1,0 +1,33 @@
+name:
+  r8
+path:
+  joao-luz/r8
+label_feature:
+  label
+id2label:
+  0: acq
+  1: crude
+  2: earn
+  3: grain
+  4: interest
+  5: money-fx
+  6: ship
+  7: trade
+
+pseudo_sample_prompt_template: |
+  Suppose you are an economics jouranlist. There are now the news subcategories: acq, crude, earn, grain, interest, money-fx, ship, trade. Please write an economics news article of about 200 words, so that its classification best fits the "{category}" category.
+
+labeling_task_description: |
+  You are a topic analysis tool for analysing news articles and must choose a topic from the following possible options:
+
+  0) acq
+  1) crude
+  2) earn
+  3) grain
+  4) interest
+  5) money-fx
+  6) ship
+  7) trade
+
+sentence_embed_prompt: |
+  Classify news texts into news categories.

@@ -1,0 +1,121 @@
+name:
+  r52
+path:
+  joao-luz/r52
+label_feature:
+  label
+id2label:
+  0: acq
+  1: alum
+  2: bop
+  3: carcass
+  4: cocoa
+  5: coffee
+  6: copper
+  7: cotton
+  8: cpi
+  9: cpu
+  10: crude
+  11: dlr
+  12: earn
+  13: fuel
+  14: gas
+  15: gnp
+  16: gold
+  17: grain
+  18: heat
+  19: housing
+  20: income
+  21: instal-debt
+  22: interest
+  23: ipi
+  24: iron-steel
+  25: jet
+  26: jobs
+  27: lead
+  28: lei
+  29: livestock
+  30: lumber
+  31: meal-feed
+  32: money-fx
+  33: money-supply
+  34: nat-gas
+  35: nickel
+  36: orange
+  37: pet-chem
+  38: platinum
+  39: potato
+  40: reserves
+  41: retail
+  42: rubber
+  43: ship
+  44: strategic-metal
+  45: sugar
+  46: tea
+  47: tin
+  48: trade
+  49: veg-oil
+  50: wpi
+  51: zinc
+ 
+pseudo_sample_prompt_template: |
+  Suppose you are an economics jouranlist. There are now the news subcategories: acq, alum, bop, carcass, cocoa, coffee, copper, cotton, cpi, cpu, crude, dlr, earn, fuel, gas, gnp, gold, grain, heat, housing, income, instal-debt, interest, ipi, iron-steel, jet, jobs, lead, lei, livestock, lumber, meal-feed, money-fx, money-supply, nat-gas, nickel, orange, pet-chem, platinum, potato, reserves, retail, rubber, ship, strategic-metal, sugar, tea, tin, trade, veg-oil, wpi, zinc. Please write an economics news article of about 200 words, so that its classification best fits the "{category}" category.
+
+labeling_task_description: |
+  You are a topic analysis tool for analysing news articles and must choose a topic from the following possible options:
+
+  0) acq
+  1) alum
+  2) bop
+  3) carcass
+  4) cocoa
+  5) coffee
+  6) copper
+  7) cotton
+  8) cpi
+  9) cpu
+  10) crude
+  11) dlr
+  12) earn
+  13) fuel
+  14) gas
+  15) gnp
+  16) gold
+  17) grain
+  18) heat
+  19) housing
+  20) income
+  21) instal-debt
+  22) interest
+  23) ipi
+  24) iron-steel
+  25) jet
+  26) jobs
+  27) lead
+  28) lei
+  29) livestock
+  30) lumber
+  31) meal-feed
+  32) money-fx
+  33) money-supply
+  34) nat-gas
+  35) nickel
+  36) orange
+  37) pet-chem
+  38) platinum
+  39) potato
+  40) reserves
+  41) retail
+  42) rubber
+  43) ship
+  44) strategic-metal
+  45) sugar
+  46) tea
+  47) tin
+  48) trade
+  49) veg-oil
+  50) wpi
+  51) zinc
+
+sentence_embed_prompt: |
+  Classify news texts into news categories.

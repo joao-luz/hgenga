@@ -1,0 +1,63 @@
+name:
+  ohsumed-single
+path:
+  joao-luz/ohsumed-single
+label_feature:
+  label
+id2label:
+  0: Bacterial Infections and Mycoses
+  1: Virus Diseases
+  2: Parasitic Diseases
+  3: Neoplasms
+  4: Musculoskeletal Diseases
+  5: Digestive System Diseases
+  6: Stomatognathic Diseases
+  7: Respiratory Tract Diseases
+  8: Otorhinolaryngologic Diseases
+  9: Nervous System Diseases
+  10: Eye Diseases
+  11: Urologic and Male Genital Diseases
+  12: Female Genital Diseases and Pregnancy Complications
+  13: Cardiovascular Diseases
+  14: Hemic and Lymphatic Diseases
+  15: Neonatal Diseases and Abnormalities
+  16: Skin and Connective Tissue Diseases
+  17: Nutritional and Metabolic Diseases
+  18: Endocrine Diseases
+  19: Immunologic Diseases
+  20: Disorders of Environmental Origin
+  21: Animal Diseases
+  22: Pathological Conditions, Signs and Symptoms
+
+pseudo_sample_prompt_template: |
+  Suppose you are a medical specialist. There are now the medical paper subcategories: Bacterial Infections and Mycoses, Virus Diseases, Parasitic Diseases, Neoplasms, Musculoskeletal Diseases, Digestive System Diseases, Stomatognathic Diseases, Respiratory Tract Diseases, Otorhinolaryngologic Diseases, Nervous System Diseases, Eye Diseases, Urologic and Male Genital Diseases, Female Genital Diseases and Pregnancy Complications, Cardiovascular Diseases, Hemic and Lymphatic Diseases, Neonatal Diseases and Abnormalities, Skin and Connective Tissue Diseases, Nutritional and Metabolic Diseases, Endocrine Diseases, Immunologic Diseases, Disorders of Environmental Origin, Animal Diseases, Pathological Conditions, Signs and Symptoms. Please write a paper abstract of about 200 words, so that its classification best fits the "{category}" category.
+
+labeling_task_description: |
+  You are a topic analysis tool for analysing medical articles and must classify them as one of the following:
+  
+  0) Bacterial Infections and Mycoses
+  1) Virus Diseases
+  2) Parasitic Diseases
+  3) Neoplasms
+  4) Musculoskeletal Diseases
+  5) Digestive System Diseases
+  6) Stomatognathic Diseases
+  7) Respiratory Tract Diseases
+  8) Otorhinolaryngologic Diseases
+  9) Nervous System Diseases
+  10) Eye Diseases
+  11) Urologic and Male Genital Diseases
+  12) Female Genital Diseases and Pregnancy Complications
+  13) Cardiovascular Diseases
+  14) Hemic and Lymphatic Diseases
+  15) Neonatal Diseases and Abnormalities
+  16) Skin and Connective Tissue Diseases
+  17) Nutritional and Metabolic Diseases
+  18) Endocrine Diseases
+  19) Immunologic Diseases
+  20) Disorders of Environmental Origin
+  21) Animal Diseases
+  22) Pathological Conditions, Signs and Symptoms
+
+sentence_embed_prompt: |
+  Classify documents into biomedical categories

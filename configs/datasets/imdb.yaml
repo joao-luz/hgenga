@@ -1,0 +1,24 @@
+name:
+  imdb
+path:
+  pietrolesci/imdb
+label_feature:
+  labels
+id2label:
+  0: negative
+  1: positive
+
+pseudo_sample_prompt_template: |
+  Suppose you are an internet movie critic. There are now the movie review subcategories: positive and negative. Please write an internet movie review of about 50 to 100 words, so that its classification best fits the "{category}" category.
+
+labeling_prompt_template: |
+  You are a sentiment analysis tool for analysing movie reviews. Look at the following text:
+
+  {text}
+
+  What is the sentiment related to the text? Choose one of the options below:
+
+  0) negative
+  1) positive
+
+  Respond ONLY with the sentiment number and no other information.
